@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: Roboto-Bold;
+            src: url('fonts/Roboto-Bold.ttf');
+        }
+        @font-face {
+            font-family: Roboto-Bold;
+            src: url('fonts/Roboto-Medium.ttf');
+        }
+        * {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        #wrap {
+            width: 300px;
+            height: 250px;
+            background-color: #ffffff;
+            position: relative;
+        }
+        #bannerSection {
+            width: 300px;
+            height: 100px;
+        }
+        #articleSection {
+            width: 300px;
+            height: 150px;
+        }
+        #articleSection a.eachArticle {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            border-top:1px solid #8FADA5;
+            padding:0 10px 0 10px;
+            height: 75px;
+        }
+        #articleSection a.eachArticle img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        #articleSection a.eachArticle h3 {
+            font-family: 'Roboto-Bold', sans-serif;
+            font-size: 14px;
+            line-height: 1.3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            color: #000000;
+            margin:0;
+            padding: 0 0 0 10px
+        }
+        #articleSection a.eachArticle p {
+            font-family: 'Roboto-Medium', sans-serif;
+            font-size: 10px;
+            color: #8FADA5;
+            margin:0;
+            padding: 5px 0 0 10px
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="bannerSection">
+            <iframe src="images/300x100/index.html" width="300" height="100" scrolling="no" frameborder="0"></iframe>
+            <a href="#" target="_blank" style="position: absolute;width: 300px;height: 100px;margin: 0 auto;left: 0;right: 0;top:0;"></a>
+        </div>
+        <div id="articleSection">
+           <a href="https://tekno.kompas.com/read/2023/10/05/16160057/spesifikasi-dan-harga-samsung-galaxy-s23-fe-di-indonesia" target="_blank" class="eachArticle">
+                <div>
+                    <img src="images/article1.jpg" alt="">
+                </div>
+                <div>
+                    <h3>
+                        Spesifikasi dan Harga Samsung Galaxy S23 FE di Indonesia
+                    </h3>
+                    <p>
+                        Kompas.com - 05/10/2023, 16:16 WIB
+                    </p>
+                </div>
+            </a>
+            <a href="https://tekno.kompas.com/read/2023/10/16/10250017/6-fitur-unggulan-samsung-s23-fe-ada-kamera-flagship-warisan-galaxy-s23-dan-z?page=all" target="_blank" class="eachArticle">
+                <div>
+                    <img src="images/article2.jpg" alt="">
+                </div>
+                <div>
+                    <h3>
+                        6 Fitur Unggulan Samsung S23 FE, Ada Kamera Flagship Warisan Galaxy S23 dan Z Fold
+                    </h3>
+                    <p>
+                        Kompas.com - 16/10/2023, 10:25 WIB
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
